@@ -10,6 +10,7 @@ const Header = () => {
       <div className="slogan">
         <p>Les jouets d'hier pour un avenir plus vert</p>
       </div>
+      <div>
       <nav>
         <div className="nav-wrapper">
           <form>
@@ -23,6 +24,8 @@ const Header = () => {
           </form>
         </div>
       </nav>
+      <i class="material-icons">favorite_border</i>
+      </div>
     </header>
   );
 };
