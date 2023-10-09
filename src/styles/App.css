@@ -1,0 +1,30 @@
+                              /***********************************
+                              ***************Header **************
+                              ***********************************/
+
+.App{
+  font-family: 'Playfair Display', serif;
+    background-color: #00988E;
+    text-align: center;
+}
+
+                              /***********************************
+                              ***************Header **************
+                              ***********************************/
+
+.papou-logo img{
+  width: 250px;
+  height: 250px;
+}
+
+.slogan p{
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+header nav{
+  width: 20%;
+  margin: 10px;
+}

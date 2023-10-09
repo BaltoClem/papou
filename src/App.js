@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import 'materialize-css/dist/css/materialize.min.css';
+import './styles/App.css';
 import Header from './components/Header';
 // import SectionQuiSommesNous from './components/SectionQuiSommesNous';
 // import SectionPartenaires from './components/SectionPartenaires';
