@@ -2,11 +2,11 @@ import React from 'react';
 
 const WhoAreWe = () => {
 
-    const WhoAreWeStyle = {
+    const whoAreWeStyle = {
         color: '#00989E'
     }
     return (
-        <div style={WhoAreWeStyle}>
+        <div style={whoAreWeStyle}>
             <section className='who_are_we' >
                 <h1>Qui sommes-nous ?</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis dictum nibh at lobortis.
