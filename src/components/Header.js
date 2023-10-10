@@ -10,21 +10,25 @@ const Header = () => {
       <div className="slogan">
         <p>Les jouets d'hier pour un avenir plus vert</p>
       </div>
-      <div>
-      <nav>
-        <div className="nav-wrapper">
-          <form>
-            <div className="input-field">
-              <input id="search" type="search" required />
-              <label className="label-icon" for="search">
-                <i className="material-icons">search</i>
-              </label>
-              <i className="material-icons">close</i>
-            </div>
-          </form>
+      <div className='search_icons'>
+        <nav>
+          <div className="nav-wrapper">
+            <form>
+              <div className="input-field">
+                <input id="search" type="search" placeholder='Recherche' required />
+                <label className="label-icon" for="search">
+                  <i className="material-icons">search</i>
+                </label>
+                <i className="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <div className='group_icons'>
+          <i class="material-icons">favorite_border</i>
+          <i class="material-icons">person_outline</i>
+          <i class="material-icons">shopping_cart</i>
         </div>
-      </nav>
-      <i class="material-icons">favorite_border</i>
       </div>
     </header>
   );
