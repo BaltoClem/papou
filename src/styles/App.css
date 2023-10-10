@@ -5,7 +5,7 @@
 .App {
   /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Akaya Kanadaka', sans-serif;
-  background-color: #00988E;
+  background-color: white;
   text-align: center;
 }
 
@@ -60,10 +60,37 @@ header {
   font-size: 40px;
 }
 
+#search {
+  border-radius: 15px;
+}
+
 .group_icons i{
   margin: 10px;
 }
 
 /***********************************
-*************** Footer **************
+*************** Footer *************
 ***********************************/
+
+footer{
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer .social_icons {
+  display: flex;
+  justify-content: space-between; /* Espace égal entre les icônes */
+  width: 150px; /* Ajustez la largeur en fonction de vos besoins */
+  margin: auto;
+}
+
+footer .social_icons a {
+  text-decoration: none; /* Supprimer la soulignement du lien */
+}
+
+/***********************************
+********** Qui sommes-nous? ********
+***********************************/
+
+.who_are_we p{
+  margin: 80px;
+}

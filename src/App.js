@@ -6,7 +6,7 @@ import Header from './components/Header';
 // import SectionNosValeurs from './components/SectionNosValeurs';
 // import SectionNosCategories from './components/SectionNosCategories';
 // import SectionNosIncontournables from './components/SectionNosIncontournables';
-// import WhoAreWe from './components/WhoAreWe';
+import WhoAreWe from './components/WhoAreWe';
 import Footer from './components/Footer';
 
 
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-       {/* <WhoAreWe /> */}
+      <WhoAreWe />
       {/*<SectionPartenaires />
       <SectionNosValeurs />
       <SectionNosCategories />
