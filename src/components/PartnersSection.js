@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-// Importez les logos de vos partenaires
 import partenaire1 from '../data/partners_logo/partner1.png';
 import partenaire2 from '../data/partners_logo/partner2.png';
 import partenaire3 from '../data/partners_logo/partner3.jpg';
@@ -15,15 +14,11 @@ const partenaires = [
   { id: 3, logo: partenaire3, nom: 'Partenaire 3' },
   { id: 4, logo: partenaire4, nom: 'Partenaire 4' },
   { id: 5, logo: partenaire5, nom: 'Partenaire 5' }
-  // Ajoutez d'autres partenaires ici
 ];
 
 const partnersSectionStyle = {
-    color: '#00989E'
-}
-
-const imageWidthPercentage = 20; // Définissez la largeur en pourcentage de la largeur de l'écran
-const imageHeight = 200; // Définissez la hauteur souhaitée pour les images
+  color: '#00989E'
+};
 
 const PartnersSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,12 +26,19 @@ const PartnersSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % partenaires.length);
-    }, 3000); // Changement d'image automatique toutes les 3 secondes
+    }, 3000);
 
     return () => {
       clearInterval(interval);
     };
   }, []);
+
+  // Ajoutez cette fonction pour calculer la largeur des images en pourcentage
+  const getImageWidth = () => {
+    const windowWidth = window.innerWidth;
+    const imageWidthPercentage = windowWidth <= 768 ? 50 : 20; // Ajustez les valeurs pour différentes tailles d'écran
+    return imageWidthPercentage;
+  };
 
   return (
     <div className="carousel-container" style={partnersSectionStyle}>
@@ -56,7 +58,10 @@ const PartnersSection = () => {
             <img
               src={partenaire.logo}
               alt={partenaire.nom}
-              style={{ width: `${imageWidthPercentage}%`, height: imageHeight }}
+              style={{
+                width: `${getImageWidth()}%`, // Utilisez la largeur calculée
+                height: 'auto', // Ajustez la hauteur en conséquence
+              }}
             />
           </div>
         ))}

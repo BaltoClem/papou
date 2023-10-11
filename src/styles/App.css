@@ -73,14 +73,20 @@ header {
 ***********************************/
 
 footer{
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-size: 25px;
+}
+
+footer h5{
+  font-size: 40px;
 }
 
 footer .social_icons {
   display: flex;
   justify-content: space-between; /* Espace égal entre les icônes */
-  width: 150px; /* Ajustez la largeur en fonction de vos besoins */
+  width: 250px; /* Ajustez la largeur en fonction de vos besoins */
   margin: auto;
+  margin-top: 20px;
 }
 
 footer .social_icons a {
@@ -93,4 +99,62 @@ footer .social_icons a {
 
 .who_are_we p{
   margin: 80px;
+}
+
+/***********************************
+************ Responsive ************
+***********************************/
+
+/***********************************
+************ 768 PX ************
+***********************************/
+
+@media (max-width: 768px) {
+
+  /***********************************
+  ************** Header **************
+  ***********************************/
+  header {
+    padding: 10px; /* Ajustez le padding selon vos besoins */
+  }
+
+  .papou-logo img {
+    width: 150px; /* Ajustez la taille du logo pour les petits écrans */
+    height: 150px;
+  }
+
+  .slogan p {
+    font-size: 20px; /* Réduisez la taille de la police */
+  }
+
+  .search_icons {
+    flex-direction: column; /* Changez la direction de la flexbox pour empiler les éléments */
+  }
+
+  .search_icons nav {
+    width: 80%; /* Ajustez la largeur pour une meilleure adaptation aux petits écrans */
+    margin: 15px 0; /* Ajustez les marges selon vos besoins */
+  }
+
+  .search_icons i {
+    font-size: 30px; /* Réduisez la taille de l'icône de recherche */
+  }
+
+  #search {
+    border-radius: 10px; /* Ajustez le rayon de la bordure */
+  }
+
+  .group_icons i {
+    margin: 5px; /* Ajustez les marges entre les icônes */
+  }
+
+  /***********************************
+  *************** Home ***************
+  ***********************************/
+
+.who_are_we h1, .carousel-container h1{
+  font-size: 40px;
+}
+
+
 }
