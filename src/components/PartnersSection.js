@@ -41,31 +41,33 @@ const PartnersSection = () => {
   };
 
   return (
-    <div className="carousel-container" style={partnersSectionStyle}>
-      <h1>Nos partenaires</h1>
-      <Carousel
-        showArrows={false}
-        showStatus={false}
-        showThumbs={false}
-        showIndicators={false}
-        selectedItem={currentSlide}
-        onChange={(index) => setCurrentSlide(index)}
-        autoPlay
-        interval={3000}
-      >
-        {partenaires.map((partenaire, index) => (
-          <div key={partenaire.id} className="partenaire">
-            <img
-              src={partenaire.logo}
-              alt={partenaire.nom}
-              style={{
-                width: `${getImageWidth()}%`, // Utilisez la largeur calculée
-                height: 'auto', // Ajustez la hauteur en conséquence
-              }}
-            />
-          </div>
-        ))}
-      </Carousel>
+    <div style={partnersSectionStyle}>
+      <h1 className='partners_title'>Nos partenaires</h1>
+      <div className="carousel-container" >
+        <Carousel
+          showArrows={false}
+          showStatus={false}
+          showThumbs={false}
+          showIndicators={false}
+          selectedItem={currentSlide}
+          onChange={(index) => setCurrentSlide(index)}
+          autoPlay
+          interval={3000}
+        >
+          {partenaires.map((partenaire, index) => (
+            <div key={partenaire.id} className="partenaire">
+              <img
+                src={partenaire.logo}
+                alt={partenaire.nom}
+                style={{
+                  width: `${getImageWidth()}%`, // Utilisez la largeur calculée
+                  height: 'auto', // Ajustez la hauteur en conséquence
+                }}
+              />
+            </div>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 };

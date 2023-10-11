@@ -4,7 +4,7 @@ import './styles/App.css';
 import Header from './components/Header';
 import WhoAreWe from './components/WhoAreWe';
 import PartnersSection from './components/PartnersSection';
-// import SectionNosValeurs from './components/SectionNosValeurs';
+import OurValues from './components/OurValues';
 // import SectionNosCategories from './components/SectionNosCategories';
 // import SectionNosIncontournables from './components/SectionNosIncontournables';
 import Footer from './components/Footer';
@@ -17,9 +17,9 @@ function App() {
       <Header />
       <WhoAreWe />
       <PartnersSection />
-      {/*<SectionNosValeurs />
-      <SectionNosCategories />
-      <SectionNosIncontournables />*/}
+      <OurValues />
+      {/* <SectionNosCategories />
+      <SectionNosIncontournables /> */}
       <Footer /> 
     </div>
   );

@@ -69,6 +69,19 @@ header {
 }
 
 /***********************************
+*************** Home ***************
+***********************************/
+
+.who_are_we p, .our_values p{
+  margin: 80px;
+  font-size: 25px;
+}
+
+.partners_title {
+  margin-bottom : 70px;
+}
+
+/***********************************
 *************** Footer *************
 ***********************************/
 
@@ -91,14 +104,6 @@ footer .social_icons {
 
 footer .social_icons a {
   text-decoration: none; /* Supprimer la soulignement du lien */
-}
-
-/***********************************
-********** Qui sommes-nous? ********
-***********************************/
-
-.who_are_we p{
-  margin: 80px;
 }
 
 /***********************************
@@ -152,7 +157,7 @@ footer .social_icons a {
   *************** Home ***************
   ***********************************/
 
-.who_are_we h1, .carousel-container h1{
+.who_are_we h1, .partners_title{
   font-size: 40px;
 }
 
