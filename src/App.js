@@ -6,7 +6,7 @@ import WhoAreWe from './components/WhoAreWe';
 import PartnersSection from './components/PartnersSection';
 import OurValues from './components/OurValues';
 // import SectionNosCategories from './components/SectionNosCategories';
-// import SectionNosIncontournables from './components/SectionNosIncontournables';
+import OurEssentials from './components/OurEssentials';
 import Footer from './components/Footer';
 
 
@@ -18,8 +18,8 @@ function App() {
       <WhoAreWe />
       <PartnersSection />
       <OurValues />
-      {/* <SectionNosCategories />
-      <SectionNosIncontournables /> */}
+      {/* <SectionNosCategories /> */}
+      <OurEssentials />
       <Footer /> 
     </div>
   );
