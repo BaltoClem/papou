@@ -1,69 +1,96 @@
-import React, { useState, useEffect } from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
-import partenaire1 from '../data/partners_logo/partner1.png';
-import partenaire2 from '../data/partners_logo/partner2.png';
-import partenaire3 from '../data/partners_logo/partner3.jpg';
-import partenaire4 from '../data/partners_logo/partner4.png';
-import partenaire5 from '../data/partners_logo/partner5.webp';
-
-const partenaires = [
-  { id: 1, logo: partenaire1, nom: 'Partenaire 1' },
-  { id: 2, logo: partenaire2, nom: 'Partenaire 2' },
-  { id: 3, logo: partenaire3, nom: 'Partenaire 3' },
-  { id: 4, logo: partenaire4, nom: 'Partenaire 4' },
-  { id: 5, logo: partenaire5, nom: 'Partenaire 5' }
-];
-
-const partnersSectionStyle = {
-  color: '#00989E'
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
 };
 
+const carouselItems = [
+  {
+    image: 'images/office.jpg',
+    seller: 'Nom du vendeur 1',
+    price: '$10',
+  },
+  {
+    image: 'images/office.jpg',
+    seller: 'Nom du vendeur 2',
+    price: '$20',
+  },
+  {
+    image: 'images/office.jpg',
+    seller: 'Nom du vendeur 3',
+    price: '$30',
+  },
+  {
+    image: 'images/office.jpg',
+    seller: 'Nom du vendeur 4',
+    price: '$40',
+  },
+  {
+    image: 'images/office.jpg',
+    seller: 'Nom du vendeur 5',
+    price: '$50',
+  },
+  {
+    image: 'images/office.jpg',
+    seller: 'Nom du vendeur 6',
+    price: '$60',
+  }
+];
+
+const carouselContainerStyle = {
+  margin: '20px', // Ajoutez la marge souhaitée
+};
+
+const ourEssentialsStyle = {
+  color: '#00989E'
+}
+
 const OurEssentials = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % partenaires.length);
-    }, 3000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
   return (
-    <div style={partnersSectionStyle}>
-      <h1 className='partners_title'>Nos partenaires</h1>
-      <div className="carousel-container" >
-        <Carousel
-          showArrows={false}
-          showStatus={false}
-          showThumbs={false}
-          showIndicators={false}
-          selectedItem={currentSlide}
-          onChange={(index) => setCurrentSlide(index)}
-          autoPlay
-          interval={3000}
-          emulateTouch
-        >
-          {partenaires.map((partenaire, index) => (
-            <div key={partenaire.id} className="partenaire">
-              <img
-                src={partenaire.logo}
-                alt={partenaire.nom}
-                style={{
-                  width: `25%`, // Utilisez la largeur calculée
-                  height: 'auto', // Ajustez la hauteur en conséquence
-                }}
-              />
+<>
+<h1 style={ourEssentialsStyle}>Nos incontournables</h1>
+    <div className='cards_carousel_essentials'>
+      <Carousel responsive={responsive} style={carouselContainerStyle}>
+        {carouselItems.map((item, index) => (
+          <div key={index} className="card" style={{ margin: '50px' }}>
+            <div className="card-image waves-effect waves-block waves-light">
+              <img className="activator" src={item.image} alt={`Produit ${index + 1}`} />
             </div>
-          ))}
-        </Carousel>
-      </div>
+            <div className="card-content">
+              <span className="card-title activator grey-text text-darken-4">
+                Card Title<i className="material-icons right">more_vert</i>
+              </span>
+              <p><a href="/">This is a link</a></p>
+            </div>
+            <div className="card-reveal">
+              <span className="card-title grey-text text-darken-4">
+                Card Title<i className="material-icons right">close</i>
+              </span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        ))}
+      </Carousel>
     </div>
-  );
+    </>
+    )
 };
 
 export default OurEssentials;
