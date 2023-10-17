@@ -40,14 +40,19 @@ header {
   color: white;
 }
 
+.navbar{
+  display: flex;
+}
+
 .search_icons {
   display: flex;
   align-items: center;
   justify-content:space-between;
+  width: 33%;
 }
 
 .search_icons nav {
-  width: 20%;
+  width: 80%;
   background-color:#00988E;
   border: 3px solid white;
   border-radius: 20px;
@@ -62,6 +67,29 @@ header {
 
 #search {
   border-radius: 15px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #00988E;
+}
+
+.tabs a{
+  color: white;
+  margin: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #00988E;
+  border: 1px solid #00988E;
+  border-radius: 5px;
+}
+
+.group_icons{
+  width: 33%;
 }
 
 .group_icons i{
@@ -136,13 +164,19 @@ footer .social_icons a {
     font-size: 20px; /* Réduisez la taille de la police */
   }
 
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .search_icons {
-    flex-direction: column; /* Changez la direction de la flexbox pour empiler les éléments */
+    width: 100%; /* Remplit toute la largeur de l'écran */
+    justify-content: center;
   }
 
   .search_icons nav {
-    width: 80%; /* Ajustez la largeur pour une meilleure adaptation aux petits écrans */
-    margin: 15px 0; /* Ajustez les marges selon vos besoins */
+    width: 90%; /* Ajustez la largeur pour une meilleure adaptation aux petits écrans */
+    margin: 10px 0; /* Ajustez les marges selon vos besoins */
   }
 
   .search_icons i {
@@ -153,8 +187,19 @@ footer .social_icons a {
     border-radius: 10px; /* Ajustez le rayon de la bordure */
   }
 
-  .group_icons i {
-    margin: 5px; /* Ajustez les marges entre les icônes */
+  .tabs {
+    width: 100%; /* Remplit toute la largeur de l'écran */
+    text-align: center;
+  }
+
+  .tabs a {
+    margin: 5px;
+    font-size: 16px; /* Réduisez la taille de la police */
+  }
+
+  .group_icons {
+    width: 100%; /* Remplit toute la largeur de l'écran */
+    justify-content: center;
   }
 
   /***********************************
