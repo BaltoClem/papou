@@ -41,7 +41,6 @@
       }
     
       .social-icons {
-        flex-direction: column;
         /* Aligner les icônes verticalement pour les écrans plus petits */
         text-align: center;
       }
@@ -50,6 +49,4 @@
         font-size: 16px;
         /* Réduire la taille de la police pour les écrans plus petits */
       }
-    
-    
   }

@@ -37,10 +37,10 @@ const Header = () => {
         {/* Tabs */}
         <div className='tabs'>
           <a href="#tab1">Boutique</a>
-          <a href="#tab2">De 0 à 3 ans</a>
-          <a href="#tab3">De 3 à 6 ans</a>
-          <a href="#tab4">De 6 à 10 ans</a>
-          <a href="#tab5">Plus de 10 ans</a>
+          <a href="#tab2" className='hidden-link'>De 0 à 3 ans</a>
+          <a href="#tab3" className='hidden-link'>De 3 à 6 ans</a>
+          <a href="#tab4" className='hidden-link'>De 6 à 10 ans</a>
+          <a href="#tab5" className='hidden-link'>Plus de 10 ans</a>
         </div>
         {/* Tabs */}
 
