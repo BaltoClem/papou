@@ -7,6 +7,7 @@ import OurEssentials from './components/OurEssentials';
 import PartnersSection from './components/PartnersSection';
 import OurValues from './components/OurValues';
 import Footer from './components/Footer';
+import OtherTreasures from './components/OtherTreasures';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <OurEssentials />
       <PartnersSection />
       <OurValues />
+      <OtherTreasures />
       <Footer /> 
     </div>
   );
