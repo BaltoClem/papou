@@ -1,0 +1,14 @@
+.who_are_we h1{
+    font-size: 50px;
+}
+
+.who_are_we p {
+    margin: 80px;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .who_are_we h1 {
+        font-size: 40px;
+    }
+}

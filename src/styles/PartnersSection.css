@@ -1,0 +1,13 @@
+.partners_title {
+    margin-bottom: 70px;
+    color: #00988E;
+    font-size: 50px;
+  }
+
+  @media (max-width: 768px) {
+  
+    .partners_title {
+      font-size: 40px;
+    }
+  
+  }

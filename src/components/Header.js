@@ -1,15 +1,11 @@
 import React from 'react';
 import logo from '../data/logo.png';
+import '../styles/Header.css';
 
 const Header = () => {
 
-  const headerStyle = {
-    backgroundColor: "#00988E", // Définit la couleur de fond
-    color: "white", // Définit la couleur du texte en blanc
-  };
-
   return (
-    <header style={headerStyle}>
+    <header>
       <div className="papou-logo">
         <img src={logo} alt="Logo" />
       </div>

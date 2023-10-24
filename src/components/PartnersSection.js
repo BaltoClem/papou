@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import '../styles/PartnersSection.css'
 
 import partenaire1 from '../data/partners_logo/partner1.png';
 import partenaire2 from '../data/partners_logo/partner2.png';
@@ -15,10 +16,6 @@ const partenaires = [
   { id: 4, logo: partenaire4, nom: 'Partenaire 4' },
   { id: 5, logo: partenaire5, nom: 'Partenaire 5' }
 ];
-
-const partnersSectionStyle = {
-  color: '#00989E'
-};
 
 const PartnersSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -41,7 +38,7 @@ const PartnersSection = () => {
   };
 
   return (
-    <div style={partnersSectionStyle}>
+    <div>
       <h1 className='partners_title'>Nos partenaires</h1>
       <div className="carousel-container" >
         <Carousel

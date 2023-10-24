@@ -1,0 +1,137 @@
+header {
+    padding: 5px;
+    background-color: #00988E;
+    color: white;
+  }
+  
+  .papou-logo img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .slogan p {
+    margin: 10px;
+    padding: 20px;
+    font-size: 40px;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+  
+  .search_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 33%;
+  }
+  
+  .search_icons nav {
+    width: 80%;
+    background-color: #00988E;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .search_icons i {
+    color: white;
+    font-size: 40px;
+  }
+  
+  #search {
+    border-radius: 15px;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #00988E;
+  }
+  
+  .tabs a {
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #00988E;
+    border: 1px solid #00988E;
+    border-radius: 5px;
+  }
+  
+  .group_icons {
+    width: 33%;
+  }
+  
+  .group_icons i {
+    margin: 10px;
+  }
+
+  @media (max-width: 768px){
+    header {
+        padding: 10px;
+        /* Ajustez le padding selon vos besoins */
+      }
+    
+      .papou-logo img {
+        width: 150px;
+        /* Ajustez la taille du logo pour les petits écrans */
+        height: 150px;
+      }
+    
+      .slogan p {
+        font-size: 20px;
+        /* Réduisez la taille de la police */
+      }
+    
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .search_icons {
+        width: 100%;
+        /* Remplit toute la largeur de l'écran */
+        justify-content: center;
+      }
+    
+      .search_icons nav {
+        width: 90%;
+        /* Ajustez la largeur pour une meilleure adaptation aux petits écrans */
+        margin: 10px 0;
+        /* Ajustez les marges selon vos besoins */
+      }
+    
+      .search_icons i {
+        font-size: 30px;
+        /* Réduisez la taille de l'icône de recherche */
+      }
+    
+      #search {
+        border-radius: 10px;
+        /* Ajustez le rayon de la bordure */
+      }
+    
+      .tabs {
+        width: 100%;
+        /* Remplit toute la largeur de l'écran */
+        text-align: center;
+      }
+    
+      .tabs a {
+        margin: 5px;
+        font-size: 16px;
+        /* Réduisez la taille de la police */
+      }
+    
+      .group_icons {
+        width: 100%;
+        /* Remplit toute la largeur de l'écran */
+        justify-content: center;
+      }
+  }
