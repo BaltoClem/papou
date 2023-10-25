@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../data/logo.png';
 import '../styles/Header.css';
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 
@@ -35,13 +36,16 @@ const Header = () => {
         {/* SearchBar */}
 
         {/* Tabs */}
-        <div className='tabs'>
-          <a href="#tab1">Boutique</a>
-          <a href="#tab2" className='hidden-link'>De 0 à 3 ans</a>
-          <a href="#tab3" className='hidden-link'>De 3 à 6 ans</a>
-          <a href="#tab4" className='hidden-link'>De 6 à 10 ans</a>
-          <a href="#tab5" className='hidden-link'>Plus de 10 ans</a>
-        </div>
+
+          <div className='tabs'>
+            <Link to="/">Accueil</Link>
+            <Link to="/shop">Boutique</Link>
+            <Link to="/category/0-3" className='hidden-link'>De 0 à 3 ans</Link>
+            <Link to="/category/3-6" className='hidden-link'>De 3 à 6 ans</Link>
+            <Link to="/category/6-10" className='hidden-link'>De 6 à 10 ans</Link>
+            <Link to="/category/10-plus" className='hidden-link'>Plus de 10 ans</Link>
+          </div>
+        
         {/* Tabs */}
 
         {/* Icons Group */}
