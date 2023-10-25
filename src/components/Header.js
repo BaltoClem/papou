@@ -10,9 +10,9 @@ const Header = () => {
       <div className="papou-logo">
         <img src={logo} alt="Logo" />
       </div>
-      <div className="slogan">
+      {/* <div className="slogan">
         <p>Les jouets d'hier pour un avenir plus vert</p>
-      </div>
+      </div> */}
 
       {/* General Bar */}
       <div className='navbar'>
@@ -38,12 +38,12 @@ const Header = () => {
         {/* Tabs */}
 
           <div className='tabs'>
-            <Link to="/">Accueil</Link>
-            <Link to="/shop">Boutique</Link>
-            <Link to="/category/0-3" className='hidden-link'>De 0 à 3 ans</Link>
-            <Link to="/category/3-6" className='hidden-link'>De 3 à 6 ans</Link>
-            <Link to="/category/6-10" className='hidden-link'>De 6 à 10 ans</Link>
-            <Link to="/category/10-plus" className='hidden-link'>Plus de 10 ans</Link>
+            <Link to="/" className='link'>Accueil</Link>
+            <Link to="/shop" className='link'>Boutique</Link>
+            <Link to="/category/0-3" className='hidden-link link'>De 0 à 3 ans</Link>
+            <Link to="/category/3-6" className='hidden-link link'>De 3 à 6 ans</Link>
+            <Link to="/category/6-10" className='hidden-link link'>De 6 à 10 ans</Link>
+            <Link to="/category/10-plus" className='hidden-link link'>Plus de 10 ans</Link>
           </div>
         
         {/* Tabs */}

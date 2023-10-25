@@ -58,9 +58,8 @@ header {
     font-size: 20px;
     padding: 5px 10px;
     text-decoration: none;
-    background-color: #fff;
-    color: #00988E;
-    border: 1px solid #00988E;
+    background-color: #00988E;
+    border: 1px solid white;
     border-radius: 5px;
   }
   
@@ -112,6 +111,7 @@ header {
       .tabs {
         width: 100%;
         text-align: center;
+        
       }
     
       .tabs a {
