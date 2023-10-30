@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/OurValues.css'
+import '../../styles/home/OurValues.css'
 
 const OurValues = () => {
     const ourValuesStyle = {

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import '../styles/PartnersSection.css'
+import '../../styles/home/PartnersSection.css'
 
-import partenaire1 from '../data/partners_logo/partner1.png';
-import partenaire2 from '../data/partners_logo/partner2.png';
-import partenaire3 from '../data/partners_logo/partner3.jpg';
-import partenaire4 from '../data/partners_logo/partner4.png';
-import partenaire5 from '../data/partners_logo/partner5.webp';
+import partenaire1 from '../../data/partners_logo/partner1.png';
+import partenaire2 from '../../data/partners_logo/partner2.png';
+import partenaire3 from '../../data/partners_logo/partner3.jpg';
+import partenaire4 from '../../data/partners_logo/partner4.png';
+import partenaire5 from '../../data/partners_logo/partner5.webp';
 
 const partenaires = [
   { id: 1, logo: partenaire1, nom: 'Partenaire 1' },
