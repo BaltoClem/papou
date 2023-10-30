@@ -1,0 +1,30 @@
+.product-description {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .product-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+  }
+
+  .main-image{
+    width:800px;
+    height: 400px;
+  }
+  
+  .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Marge à gauche pour l'espacement */
+    padding: 70px;
+  }
+  
+  .product-history,
+  .product-condition {
+    margin-bottom: 20px; /* Espacement entre les sections "L'histoire du produit" et "État du produit" */
+  }
+  
