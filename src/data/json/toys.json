@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "name": "Produit 1",
+      "price": 19.99,
+      "description": "Ceci est la description du produit 1.",
+      "image": "../../data/fake_toys_papou/toy_1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Produit 2",
+      "price": 19.99,
+      "description": "Ceci est la description du produit 2.",
+      "image": "../../data/fake_toys_papou/toy_2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Produit 3",
+      "price": 19.99,
+      "description": "Ceci est la description du produit 3.",
+      "image": "../../data/fake_toys_papou/toy_3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Produit 4",
+      "price": 19.99,
+      "description": "Ceci est la description du produit 4.",
+      "image": "../../data/fake_toys_papou/toy_4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Produit 5",
+      "price": 19.99,
+      "description": "Ceci est la description du produit 5.",
+      "image": "../../data/fake_toys_papou/toy_5.jpg"
+    }
+  ]

@@ -24,7 +24,7 @@ const Header = () => {
               <form>
                 <div className="input-field">
                   <input id="search" type="search" placeholder='Recherche' required />
-                  <label className="label-icon" for="search">
+                  <label className="label-icon" htmlFor="search">
                     <i className="material-icons">search</i>
                   </label>
                   <i className="material-icons">close</i>
@@ -50,9 +50,9 @@ const Header = () => {
 
         {/* Icons Group */}
         <div className='group_icons'>
-          <i class="material-icons">favorite_border</i>
-          <i class="material-icons">person_outline</i>
-          <i class="material-icons">shopping_cart</i>
+          <i className="material-icons">favorite_border</i>
+          <i className="material-icons">person_outline</i>
+          <i className="material-icons">shopping_cart</i>
         </div>
         {/* Icons Group */}
 
